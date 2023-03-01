@@ -1,0 +1,236 @@
+/* Please ignore all my notes, 
+i plan to fix the styling when i have more time*/
+
+/* to do: 
+change images []
+fix flexbox images (main)[]
+fix form []
+fix text in banner [x]
+add aside/sidebar []
+properly fix resizing []
+clean up the cluster fuck that is this code []
+
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.temp {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+body, html {
+    height: 100%;
+}
+
+:root {
+    --pruple: rgb(136, 0, 255);
+}
+
+.avatar {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    max-width: 7rem;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    position: relative;
+    color: white;
+    height: 25%;
+}
+
+.header {
+    position: relative;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: .5em .7em;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+    border: solid;
+}
+
+/* fix in free time
+
+.side {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.sidebar {
+    margin: 6rem 0;
+    padding: 0;
+    width: 13rem;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.side-container {
+    padding: 1rem;
+    clear: both;
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #5d2626
+}
+*/
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1 1 0;
+    margin: 2% auto; 
+}
+
+.img {
+    display: flex;
+    width: 75%;
+    display: inline-block;
+    padding: 1.5rem .5rem;
+    margin-bottom: .5rem;
+}
+
+.img-big {
+    display: flex;
+    justify-content: center;
+    margin: 0 .5rem .5rem .5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 100%;
+}
+
+.img-small {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: .5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 45%;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact {
+    background-image: url(../images/hero.jpg);
+    background-color: aquamarine;
+    color: rebeccapurple;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 400%;
+    font-size: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+form button {
+    padding: 1%;
+    background-color: aliceblue;
+    color: black;
+}
+
+form button:hover {
+    color: aliceblue;
+    background-color: black;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 1%;
+    text-align: center;    
+}
+
+main .img {
+    -webkit-filter: brightness(100%);
+}
+
+.img:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* phones*/
+@media screen and (min-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+}
+
+/* monitor */
+@media screen and (min-width: 992px) {
+    .main {
+        flex-direction: column;
+    }
+  
+    * {
+          flex-direction: column;
+          display: inline-block;
+          position: relative;
+    }
+    
+}
