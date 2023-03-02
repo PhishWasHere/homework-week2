@@ -66,6 +66,7 @@ nav a {
     border-radius: 15rem;
 }
 
+/*hover element*/
 .nav a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -119,8 +120,6 @@ nav a {
     padding-bottom: 1rem;
 }
 
-
-
 /* project-------------------------------------------------------- */
 
 #project {
@@ -145,7 +144,7 @@ nav a {
     height: 20vh;
 }
 
-#project1 {
+#project1 { /*largest image*/
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
     width: 120%;
@@ -172,7 +171,8 @@ nav a {
     margin: 1rem;
 }
 
-.button {
+.button { /*button for projects*/
+    color: white;
     background-color: #04AA6D;
     margin: 1rem;
     padding: .2rem;
@@ -189,7 +189,8 @@ nav a {
     transition: all 1s ease;
 }
 
-/*contact---------------------------------------------I defenetly knew how to do this, and didnt just use google*/
+/*contact------------------I defenetly knew how to do this, and didnt just use google*/
+
 #btn-center {
     text-align: center;
 }
@@ -219,7 +220,7 @@ nav a {
     background-color: white;
 }
 
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type=text], .form-container input[type=password] { /*containers for input*/
     width: 100%;
     padding: 1rem;
     margin: 5px 0 22px 0;
