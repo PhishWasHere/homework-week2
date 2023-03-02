@@ -1,95 +1,138 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<!--Please ignore all my notes, 
-i plan to fix the styling when i have more time-->
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>homework</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <hero class="hero"> 
-        <div>
-            <img class= "avatar" src="./assets/images/surprise cat.PNG" alt="suprise cat">
+    <hero class="hero-banner" id="hero">
+        <div id="hero-text">
+            <h1>Miran</h1>
+            <p>Hello World</p>
         </div>
-        <h1 class="hero-words">
-           Miran Y
-        </h1>
+        <div>
+            <img class="center" id="image" src="./assets/images/cat31.png" alt="profile">
+        </div>
     </hero>
-    
-    <nav class="nav">
-        <!--maybe use <button>? -->
-        <a href="#cat27">my work</a>
-        <a href="#about">about me</a>
-        <a href="#contact">contact me</a>
+
+    <nav>
+        <div class="nav">
+            <a class=".nav-hover" href="#about">
+                About
+            </a>
+                
+            <a class=".nav-hover" href="#project">
+                Projects
+            </a>
+            <a class=".nav-hover" href="#contact">
+                Contact 
+            </a>
+
+            <a class=".nav-hover" href="#qualifications">
+                Qualifications 
+            </a>
+        </div>
     </nav>
 
-    <article id="about" class="about-container">
-        <div class="about">
-            <H3>
+    <section class="background-right">
+        <div id="about" >
+            <h2>
                 About me
-            </H3>
+            </h2>
             <p>
-                words aaaaaaaaaaaaaaa
-                aaaaaaaaaaaa asdljbflkjaef 
-                fjnwe  eoueghuoih grejrpoijoij  jioejgsv iusehgliuh
-                sieufghsliuh oiapwef bjiotp
+                alot of words jsdhblksdfhjb aajdfkbalhdfalh b 
+                uiasjdhf ;ioherg;ios a;sdfklgh 
             </p>
         </div>
-    </article>
+    </section>
 
-    <main class="main"> <!--  https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbox -->
-        <div class="">
-            <div>
-                <h5>Project 1</h5>
-                <a href="#">
-                <img class="img img-big" src='./assets/images/cat cheese.PNG' alt="cheese">
-                </a>
-            </div>
-            <section class="img-container11">
-                <div class="img">
-                    <a href="#">
-                        <h5>Project 2</h5>
-                        <img class="img-small" id="cat27" src="./assets/images/cat27.png" alt="temp"> 
-                    </a>
-                </div>
-                <div class="img img-container">
-                    <a href="#">
-                        <h5>Project 3</h5>
-                        <img class="img-small" id="cat27" src="./assets/images/cat27.png" alt="temp"> 
-                    </a>
-                </div>
-            </section>
+    <section class="background-left">
+        <div id="qualifications">
+            <h2>
+                I am qualified to:
+            </h2>
+            <p>
+                Never give you up.<br> Never let you down.<br> Never run around and desert you. <br>
+                Never gonna make you cry. <br>Never gonna say goodbye. <br>Never gonna hurt you.
+                
+            </p> 
         </div>
+    </section>
+
+    <main id="project" class="project-container background-right ">
+
+        <div id="project1">
+            <h4 class="header4">
+                words
+            </h4>
+            <a class="button" href="#">Click me</a>
+        </div>
+
+        <div id="project2">
+            <h4 class="header4">
+                words
+            </h4>
+            <a class="button" href="#">Click me</a>
+        </div>
+
+        <div id="project3">
+            <h4 class="header4">
+                words
+            </h4>
+            <a class="button" href="#">Click me</a>
+        </div>
+
     </main>
-    <!-- fix form -->
-    <form class="contact form form-flex" id="contact">
-        <p>
-            <h4>Contact me</h4>
-            <label for="username">Name: 
-            <input class="text-input" id="username" type="text" placeholder="Name"/>
-            </label>
-        </p>
 
-        <p>
-            <label for="email">E-mail:</label>
-            <input class="text-input" id="email" type="text" placeholder="example@example.com" />
-        </p>
-        
-        <p>
-            <label for="comment">Comment:</label>
-            <textarea class="text-input" id="comment" rows="5" cols="40" placeholder="Leave a comment"></textarea>
-        
-        </p>
-        <div class="button">
-            <button>Submit</button>
+    <!--I defenetly knew how to do this, and didnt just use google
+    I also dont know how to center it and remove the contact me button once opened-->
+    <section id="contact" class="background-left">
+        <div id="btn-center">
+           
+            <div class="form-container form-pop" id="form">
+                <form action="/action_page.php" class="form-container">
+                    <h3>
+                        Contact Me
+                    </h3>
+                    <div id="contact-center">
+                        <label for="email"><b>Name</b></label>
+                        <input type="text" placeholder="First/Last" name="Name" required>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="email"><b>Message</b></label>
+                        <textarea 
+                        type="text" placeholder="Leave me a message" name="message" style="height: 10rem;" required>
+                        </textarea>
+
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                    </form>
+                <script>
+                    function openForm() {
+                      document.getElementById("form").style.display = "block";
+                    }
+                     
+                    function closeForm() {
+                      document.getElementById("form").style.display = "none";
+                    }
+                </script>
+            </div>
+
+            <button class="open-button" onclick="openForm()">Contact Me</button>
         </div>
-    </form>
+    </section>
 
-    <footer>
-        <p class="footer">footer</p>
+    <footer id="footer">
+        <h5>
+            @yes 1967
+        </h5>
     </footer>
 </body>
+</html>

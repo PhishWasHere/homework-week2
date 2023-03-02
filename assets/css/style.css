@@ -1,0 +1,321 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --background-right: linear-gradient( to right, rgb(71, 55, 64), rgb(12,28,36));
+    --background-left: linear-gradient( to left, rgb(71, 55, 64), rgb(12,28,36));
+}
+
+.background-left {
+    padding:1rem;
+    background-image: linear-gradient( to left, rgb(71, 55, 64), rgb(12,28,36));
+}
+
+.background-right {
+    padding:1rem;
+    background-image: linear-gradient( to right, rgb(71, 55, 64), rgb(12,28,36));
+}
+
+/*hero------------------*/
+#hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+#hero-text {
+    font-size: 3rem;
+}
+
+.hero-banner {
+    background-image: url(../images/background.png);
+}
+
+#hero div {
+    color: white;
+}
+
+#image{
+    width: 15rem;
+    border-radius: 100%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/*nav------------------------------------------------*/
+
+.nav {
+    text-align: center;
+    background-image: var(--background-left);
+    background-color: black;
+    height: auto;
+}
+
+nav a {    
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+    display: inline-block;
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+    padding: .7rem;
+    border-radius: 15rem;
+}
+
+.nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*about--------------------*/
+
+#about {
+    min-height: 10vh;
+    background-image: url(../images/placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin:2rem 0;
+}
+
+#about h2 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*qualifications------------------------------*/
+
+#qualifications {
+    min-height: 10vh;
+    background-image: url(../images/placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+
+#qualifications h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 1rem;
+}
+
+
+#qualifications p {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+/* project-------------------------------------------------------- */
+
+#project {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width:;
+}
+
+.row {
+    flex-direction: row;
+}
+
+#project div {
+    height: 100%;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+#project1 {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    width: 120%;
+    margin: .5rem;
+} 
+
+#project2 {
+    background-image: url(../images/cat19.png);
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: .5rem;
+} 
+
+#project3 {
+    background-image: url(../images/cat25.png);
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: .5rem;
+} 
+
+.header4 {
+    color: white;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.button {
+    background-color: #04AA6D;
+    margin: 1rem;
+    padding: .2rem;
+    border-radius: 15rem;
+    -webkit-filter: brightness(100%);
+}
+
+.button:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/*contact---------------------------------------------I defenetly knew how to do this, and didnt just use google*/
+#btn-center {
+    text-align: center;
+}
+
+#contact-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.open-button {
+    margin-top: 1vh;
+    padding: 1rem 1.7rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.form-pop {
+    display: none;
+    text-align: center;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 18.75rem;
+    padding: .8rem;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 1rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container textarea[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 1rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container textarea[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 15rem;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom:.8rem;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+/*footer--------------------------------*/
+
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1vh;
+    height: 3vh;
+    background-image: linear-gradient( to left, rgb(71, 55, 64), rgb(12,28,36));
+    background-color: black;
+    color: white;
+}
+
+#footer h5 {
+    margin-top: 1vh;
+}
+
+/*size-------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+    }
+
+    #img {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #project {
+        flex-direction: column;
+    }
+
+    #project1 {
+        width: 90%;
+        margin: .5rem;
+    } 
+
+    #project2 {
+        width: 90%;
+        margin: .5rem;
+    } 
+
+    #project3 {
+        width: 90%;
+        margin: .5rem;
+    }  
+}
